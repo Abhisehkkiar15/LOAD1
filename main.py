@@ -437,51 +437,107 @@ async def start(bot, m: Message):
     else:
         await asyncio.sleep(2)
         await start_message.edit_text(
-           f" 🎉 Welcome {m.from_user.first_name} to DRM Bot! 🎉\n\n"
-           f"You can have access to download all Non-DRM+AES Encrypted URLs 🔐 including\n\n"
-           f"Use Command : /help to get started 🌟\n\n"
-           f"<blockquote>• 📚 Appx Zip+Encrypted Url\n"
-           f"• 🎓 Classplus DRM+ NDRM\n"
-           f"• 🧑‍🏫 PhysicsWallah DRM\n"
-           f"• 📚 CareerWill + PDF\n"
-           f"• 🎓 Khan GS\n"
-           f"• 🎓 Study Iq DRM\n"
-           f"• 🚀 APPX + APPX Enc PDF\n"
-           f"• 🎓 Vimeo Protection\n"
-           f"• 🎓 Brightcove Protection\n"
-           f"• 🎓 Visionias Protection\n"
-           f"• 🎓 Zoom Video\n"
-           f"• 🎓 Utkarsh Protection(Video + PDF)\n"
-           f"• 🎓 All Non DRM+AES Encrypted URLs\n"
-           f"• 🎓 MPD URLs if the key is known (e.g., Mpd_url?key=key XX:XX)</blockquote>\n\n"
-           f"🚀 You are not subscribed to any plan yet!\n\n"
-           f"<blockquote>💵 Monthly Plan: 1600</blockquote>\n\n"
-           f"If you want to buy membership of the bot, feel free to contact the Bot Admin.\n", disable_web_page_preview=True, reply_markup=keyboard
+            f"👽 <b>Welcome, {m.from_user.first_name}!</b>\n"
+            f"⚡ <i>Initiating Neural Sync with <b>DRM Interceptor Core</b>...</i> 🧠\n\n"
+
+            f"🚀 <b>Mission Capabilities:</b>\n"
+            f"<code>Decrypt • Fetch • Access • Liberate</code>\n\n"
+            f"📡 Use <b>/help</b> to initialize your control panel.\n\n"
+
+            f"<b>🧰 Supported Extraction Modules:</b>\n"
+            f"<blockquote>"
+
+            f"🧬 <b>[ UNIT AX-1 ]</b>  •  <i>AppX Decoder</i>\n"
+            f"   ↳ Zip Vaults + AES URLs 🔐\n\n"
+
+            f"🎯 <b>[ UNIT CL-2 ]</b>  •  <i>Classplus Extractor</i>\n"
+            f"   ↳ DRM + Non-DRM ➕ PDF Sync\n\n"
+
+            f"⚛️ <b>[ UNIT PW-3 ]</b>  •  <i>PhysicsWallah Mapper</i>\n"
+            f"   ↳ DRM Lockpick + Key Resolver\n\n"
+
+            f"📘 <b>[ UNIT CW-4 ]</b>  •  <i>CareerWill Suite</i>\n"
+            f"   ↳ HD Videos + Locked PDFs 📄\n\n"
+
+            f"🛰️ <b>[ UNIT KG-5 ]</b>  •  <i>Khan GS Uplink</i>\n"
+            f"   ↳ Archive Recovery + Realtime Scan\n\n"
+    
+            f"📡 <b>[ UNIT SIQ-6 ]</b>  •  <i>StudyIQ Decoder</i>\n"
+            f"   ↳ DRM Breaker v3.2 ⚙️\n\n"
+
+            f"🧿 <b>[ UNIT AX-PDF ]</b>  •  <i>AppX PDF Handler</i>\n"
+            f"   ↳ AES + ZIP Encoded Materials 📂\n\n"
+
+            f"🎥 <b>[ MEDIA DOMAINS ]</b>\n"
+            f"   ↳ Vimeo • Brightcove • VisionIAS • Zoom • Utkarsh\n"
+            f"   ↳ Supports Video + PDF ➤ Decryption 🔓\n\n"
+
+            f"🧪 <b>[ MPD MODE ]</b>\n"
+            f"   ↳ Input known key ➤ Get Stream 💡</blockquote>\n\n"
+    
+            f"🧬 <b>Membership Status:</b>\n"
+            f"<i>You are currently <u>UNSUBSCRIBED</u>.</i>\n\n"
+
+            f"💳 <b>Available Plan:</b>\n"
+            f"<blockquote>🌌 Monthly Subscription: ₹1600</blockquote>\n\n"
+
+            f"🤖 Contact the <b>Bot Admin</b> to gain full access to this parallel dimension.\n"
+            f"🔐 <i>Only the worthy shall proceed...</i>",
+            disable_web_page_preview=True,reply_markup=keyboard
+
     )
 
 @bot.on_message(filters.command(["upgrade"]))
 async def id_command(client, message: Message):
     chat_id = message.chat.id
     await message.reply_text(
-        f" 🎉 Welcome {message.from_user.first_name} to DRM Bot! 🎉\n\n"
-           f"You can have access to download all Non-DRM+AES Encrypted URLs 🔐 including\n\n"
-           f"Use Command : /help to get started 🌟\n\n"
-           f"<blockquote>• 📚 Appx Zip+Encrypted Url\n"
-           f"• 🎓 Classplus DRM+ NDRM\n"
-           f"• 🧑‍🏫 PhysicsWallah DRM\n"
-           f"• 📚 CareerWill + PDF\n"
-           f"• 🎓 Khan GS\n"
-           f"• 🎓 Study Iq DRM\n"
-           f"• 🚀 APPX + APPX Enc PDF\n"
-           f"• 🎓 Vimeo Protection\n"
-           f"• 🎓 Brightcove Protection\n"
-           f"• 🎓 Visionias Protection\n"
-           f"• 🎓 Zoom Video\n"
-           f"• 🎓 Utkarsh Protection(Video + PDF)\n"
-           f"• 🎓 All Non DRM+AES Encrypted URLs\n"
-           f"• 🎓 MPD URLs if the key is known (e.g., Mpd_url?key=key XX:XX)</blockquote>\n\n"
-           f"<b>💵 Monthly Plan: 1600</b>\n\n"
-           f"If you want to buy membership of the bot, feel free to contact the Bot Admin.\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
+        f"👽 <b>Welcome, {m.from_user.first_name}!</b>\n"
+            f"⚡ <i>Initiating Neural Sync with <b>DRM Interceptor Core</b>...</i> 🧠\n\n"
+
+            f"🚀 <b>Mission Capabilities:</b>\n"
+            f"<code>Decrypt • Fetch • Access • Liberate</code>\n\n"
+            f"📡 Use <b>/help</b> to initialize your control panel.\n\n"
+
+            f"<b>🧰 Supported Extraction Modules:</b>\n"
+            f"<blockquote>"
+
+            f"🧬 <b>[ UNIT AX-1 ]</b>  •  <i>AppX Decoder</i>\n"
+            f"   ↳ Zip Vaults + AES URLs 🔐\n\n"
+
+            f"🎯 <b>[ UNIT CL-2 ]</b>  •  <i>Classplus Extractor</i>\n"
+            f"   ↳ DRM + Non-DRM ➕ PDF Sync\n\n"
+
+            f"⚛️ <b>[ UNIT PW-3 ]</b>  •  <i>PhysicsWallah Mapper</i>\n"
+            f"   ↳ DRM Lockpick + Key Resolver\n\n"
+
+            f"📘 <b>[ UNIT CW-4 ]</b>  •  <i>CareerWill Suite</i>\n"
+            f"   ↳ HD Videos + Locked PDFs 📄\n\n"
+
+            f"🛰️ <b>[ UNIT KG-5 ]</b>  •  <i>Khan GS Uplink</i>\n"
+            f"   ↳ Archive Recovery + Realtime Scan\n\n"
+    
+            f"📡 <b>[ UNIT SIQ-6 ]</b>  •  <i>StudyIQ Decoder</i>\n"
+            f"   ↳ DRM Breaker v3.2 ⚙️\n\n"
+
+            f"🧿 <b>[ UNIT AX-PDF ]</b>  •  <i>AppX PDF Handler</i>\n"
+            f"   ↳ AES + ZIP Encoded Materials 📂\n\n"
+
+            f"🎥 <b>[ MEDIA DOMAINS ]</b>\n"
+            f"   ↳ Vimeo • Brightcove • VisionIAS • Zoom • Utkarsh\n"
+            f"   ↳ Supports Video + PDF ➤ Decryption 🔓\n\n"
+
+            f"🧪 <b>[ MPD MODE ]</b>\n"
+            f"   ↳ Input known key ➤ Get Stream 💡</blockquote>\n\n"
+    
+            f"🧬 <b>Membership Status:</b>\n"
+            f"<i>You are currently <u>UNSUBSCRIBED</u>.</i>\n\n"
+
+            f"💳 <b>Available Plan:</b>\n"
+            f"<blockquote>🌌 Monthly Subscription: ₹1600</blockquote>\n\n"
+
+            f"🤖 Contact the <b>Bot Admin</b> to gain full access to this parallel dimension.\n"
+            f"🔐 <i>Only the worthy shall proceed...</i>",
+            disable_web_page_preview=True,reply_markup=BUTTONSCONTACT
     )  
 
 @bot.on_message(filters.command(["id"]))
@@ -512,34 +568,44 @@ async def info(bot: Client, update: Message):
 @bot.on_message(filters.command(["help"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
-        f"💥 𝐁𝐎𝐓𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒\n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n" 
-        f"📌 𝗠𝗮𝗶𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:\n\n"  
-        f"➥ /start – Bot Status Check\n"
-        f"➥ /drm – Extract from .txt (Auto)\n"
-        f"➥ /y2t – YouTube → .txt Converter\n"  
-        f"➥ /ytm – YT .txt → .mp3 downloader\n"  
-        f"➥ /yt2m – YT link → .mp3 downloader\n"  
-        f"➥ /t2t – Text → .txt Generator\n" 
-        f"➥ /stop – Cancel Running Task\n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n" 
-        f"⚙️ 𝗧𝗼𝗼𝗹𝘀 & 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀: \n\n" 
-        f"➥ /cookies – Update YT Cookies\n" 
-        f"➥ /id – Get Chat/User ID\n"  
-        f"➥ /info – User Details\n"  
-        f"➥ /logs – View Bot Activity\n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-        f"👤 𝐔𝐬𝐞𝐫 𝐀𝐮𝐭𝐡𝐞𝐧𝐭𝐢𝐜𝐚𝐭𝐢𝐨𝐧: **(OWNER)**\n\n" 
-        f"➥ /addauth xxxx – Add User ID\n" 
-        f"➥ /rmauth xxxx – Remove User ID\n"  
-        f"➥ /users – Total User List\n"  
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-        f"💡 𝗡𝗼𝘁𝗲:\n\n"  
-        f"• Send any link for auto-extraction\n"  
-        f"• Supports batch processing\n\n"  
-        f"╭────────⊰◆⊱────────╮\n"   
-        f" ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : {CREDIT} 💻\n"
-        f"╰────────⊰◆⊱────────╯\n"
+        f"👨‍🚀 <b>DRM OPS CONSOLE — COMMAND INTERFACE</b>\n"
+        f"⚡ <i>Neural Core Initialized. Awaiting directives...</i>\n\n"
+
+        f"<b>💥 SYSTEM COMMANDS</b>\n"
+        f"<code>╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌</code>\n"
+        f"🧠 <b>Main Functions:</b>\n"
+        f"🛠️ /start ➤ Status Check & Core Boot\n"
+        f"🔓 /drm ➤ Auto Extract from .txt\n"
+        f"🔁 /y2t ➤ YouTube → .txt Mapper\n"
+        f"🎵 /ytm ➤ .txt to .mp3 Extractor\n"
+        f"🎧 /yt2m ➤ YT Link → .mp3 Direct\n"
+        f"📄 /t2t ➤ Raw Text → .txt Generator\n"
+        f"🛑 /stop ➤ Abort Active Process\n"
+        f"<code>╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌</code>\n\n"
+
+        f"⚙️ <b>TOOLS & SETTINGS</b>\n"
+        f"<code>╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌</code>\n"
+        f"🍪 /cookies ➤ Update YT Session\n"
+        f"🆔 /id ➤ Fetch Chat/User ID\n"
+        f"🔍 /info ➤ User Intelligence Dump\n"
+        f"📁 /logs ➤ View System Logs\n"
+        f"<code>╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌</code>\n\n"
+
+        f"🛡️ <b>USER AUTHENTICATION — <i>OWNER LEVEL</i></b>\n"
+        f"<code>╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌</code>\n"
+        f"➕ /addauth &lt;user_id&gt; ➤ Grant Access\n"
+        f"➖ /rmauth &lt;user_id&gt; ➤ Revoke Access\n"
+        f"👥 /users ➤ Active User Registry\n"
+        f"<code>╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌</code>\n\n"
+
+        f"💡 <b>NOTES:</b>\n"
+        f"• Send any supported link for auto-extraction 📡\n"
+        f"• Batch mode supported for fast queues ⚙️\n\n"
+
+        f"╭────⊰🚀⊱────╮\n"
+        f"   ⚒️ <b>Engineered by:</b> <code>{CREDIT}</code>\n"
+        f"╰────⊰🌌⊱────╯\n"
+
         )
     )                    
           
@@ -768,13 +834,14 @@ async def txt_handler(bot: Client, m: Message):
 
             elif "https://cpvod.testbook.com/" in url:
                 url = url.replace("https://cpvod.testbook.com/","https://media-cdn.classplusapp.com/drm/")
-                url = f"https://scammer-keys.vercel.app/api?url={url}&token={cptoken}&auth=@scammer_botxz1"
+                url = f"https://cpapi-rjbs.onrender.com/extract_keys?url={url}@bots_updatee"
                 mpd, keys = helper.get_mps_and_keys(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
 
             elif "classplusapp.com/drm/" in url:
-                url = f"https://scammer-keys.vercel.app/api?url={url}&token={cptoken}&auth=@scammer_botxz1"
+                url = f"https://cpapi-rjbs.onrender.com/extract_keys?url={url}@bots_updatee"
+                #url = f"https://scammer-keys.vercel.app/api?url={url}&token={cptoken}&auth=@scammer_botxz1"
                 mpd, keys = helper.get_mps_and_keys(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
@@ -983,12 +1050,12 @@ async def txt_handler(bot: Client, m: Message):
         await bot.send_message(channel_id, f"<b>-┈━═.•°✅ Completed ✅°•.═━┈-</b>\n<blockquote><b>🎯Batch Name : {b_name}</b></blockquote>\n<blockquote>🔗 Total URLs: {len(links)} \n┃   ┠🔴 Total Failed URLs: {failed_count}\n┃   ┠🟢 Total Successful URLs: {success_count}\n┃   ┃   ┠🎥 Total Video URLs: {video_count}\n┃   ┃   ┠📄 Total PDF URLs: {pdf_count}\n┃   ┃   ┠📸 Total IMAGE URLs: {img_count}</blockquote>\n")
     else:
         await bot.send_message(channel_id, f"<b>-┈━═.•°✅ Completed ✅°•.═━┈-</b>\n<blockquote><b>🎯Batch Name : {b_name}</b></blockquote>\n<blockquote>🔗 Total URLs: {len(links)} \n┃   ┠🔴 Total Failed URLs: {failed_count}\n┃   ┠🟢 Total Successful URLs: {success_count}\n┃   ┃   ┠🎥 Total Video URLs: {video_count}\n┃   ┃   ┠📄 Total PDF URLs: {pdf_count}\n┃   ┃   ┠📸 Total IMAGE URLs: {img_count}</blockquote>\n")
-        await bot.send_message(m.chat.id, f"<blockquote><b>✅ Your Task is completed, please check your Set Channel📱</b></blockquote>")
+        await bot.send_message(m.chat.id, f"<blockquote><b>✅ Your Task is completed, please check your Set Channel📱</b></blockquote>")       
 
 
 @bot.on_message(filters.text & filters.private)
 async def text_handler(bot: Client, m: Message):
-    if m.from_user.is_bot:
+    if m.from_user.is_bot: 
         return
     links = m.text
     path = None
